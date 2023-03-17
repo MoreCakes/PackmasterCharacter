@@ -4,8 +4,8 @@ import com.megacrit.cardcrawl.cards.blue.ForceField;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import thePackmaster.SpireAnniversary5Mod;
-import thePackmaster.cards.downfallpack.*;
 import thePackmaster.cards.powereduppack.StrengthStorm;
+import thePackmaster.cards.powereduppack.StrikeForm;
 import thePackmaster.cards.powereduppack.UnlimitedPower;
 
 import java.util.ArrayList;
@@ -26,8 +26,9 @@ public class PoweredUpPack extends AbstractCardPack {
         ArrayList<String> cards = new ArrayList<>();
         cards.add(StrengthStorm.ID);
 
-        cards.add(UnlimitedPower.ID);
+        cards.add(StrikeForm.ID);
 
+        cards.add(UnlimitedPower.ID);
         cards.add(ForceField.ID);
         return cards;
     }

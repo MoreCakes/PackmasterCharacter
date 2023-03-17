@@ -8,5 +8,9 @@
     "NAME": "Unlimited Power",
     "DESCRIPTION": "Whenever you play a power card, create an ethereal copy of it in you discard pile.",
     "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a power card, create an ethereal copy of it in you discard pile."
+  },
+  "${ModID}:StrikeForm": {
+    "NAME": "Strike Form",
+    "DESCRIPTION": "At the end of each turn, attack a random enemy for !D! damage."
   }
 }

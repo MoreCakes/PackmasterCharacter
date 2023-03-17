@@ -7,11 +7,20 @@
     ]
   },
   "${ModID}:UnlimitedPowerPower": {
-  "NAME": "Unlimited Power",
-  "DESCRIPTIONS": [
-    "Whenever you play a power card, create an ethereal copy of it in you discard pile.",
-    "Whenever you play a power card, create #b",
-    " ethereal copies of it in you discard pile."
-  ]
-}
+    "NAME": "Unlimited Power",
+    "DESCRIPTIONS": [
+      "Whenever you play a power card, create an ethereal copy of it in you discard pile.",
+      "Whenever you play a power card, create #b",
+      " ethereal copies of it in you discard pile."
+    ]
+  },
+  "${ModID}:StrikeFormPower": {
+    "NAME": "Strike Form",
+    "DESCRIPTIONS": [
+      "At the end of each turn, attack a random enemy for ",
+      " damage.",
+      " damage ",
+      " times."
+    ]
+  }
 }
