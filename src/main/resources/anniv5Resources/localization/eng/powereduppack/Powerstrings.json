@@ -1,0 +1,17 @@
+{
+  "${ModID}:StrengthStormPower": {
+    "NAME": "Strength Storm",
+    "DESCRIPTIONS": [
+      "Whenever you play a power, gain #b",
+      " #yStrength."
+    ]
+  },
+  "${ModID}:UnlimitedPowerPower": {
+  "NAME": "Unlimited Power",
+  "DESCRIPTIONS": [
+    "Whenever you play a power card, create an ethereal copy of it in you discard pile.",
+    "Whenever you play a power card, create #b",
+    " ethereal copies of it in you discard pile."
+  ]
+}
+}

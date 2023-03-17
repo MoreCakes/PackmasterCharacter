@@ -1,0 +1,12 @@
+{
+  "${ModID}:StrengthStorm": {
+    "NAME": "Strength Storm",
+    "DESCRIPTION": "Whenever you play a Power card, gain 1 Strength.",
+    "UPGRADE_DESCRIPTION": "Test."
+  },
+  "${ModID}:UnlimitedPower": {
+    "NAME": "Unlimited Power",
+    "DESCRIPTION": "Whenever you play a power card, create an ethereal copy of it in you discard pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a power card, create an ethereal copy of it in you discard pile."
+  }
+}
