@@ -3,12 +3,17 @@ package thePackmaster.powers.powereduppack;
 
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.watcher.VigorPower;
+import thePackmaster.actions.powereduppack.UpdateStrikeFormDescriptionAction;
 import thePackmaster.powers.AbstractPackmasterPower;
+import thePackmaster.powers.boardgamepack.DicePower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 
@@ -23,16 +28,21 @@ public class StrikeFormPower extends AbstractPackmasterPower implements NonStack
 
     public StrikeFormPower(AbstractCreature owner, AbstractCard card) {
         super(POWER_ID,NAME,PowerType.BUFF,false,owner,1);
-        this.card = card;
+        this.card = card.makeStatEquivalentCopy();
         isTwoAmount = true;
-        amount2 = card.damage;
         updateDescription();
     }
 
     @Override
     public void atEndOfTurn (boolean isPlayer) {
+        addToTop(new UpdateStrikeFormDescriptionAction(this.owner, this.ID));
         for (int i = 0; i < amount ; i++) {
-            addToBot(new AttackDamageRandomEnemyAction(card));
+            for (AbstractPower p : this.owner.powers) {
+                if (p.ID == VigorPower.POWER_ID || p.ID == DicePower.POWER_ID) {
+                    addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, p.ID));
+                }
+            }
+            addToTop(new AttackDamageRandomEnemyAction(card));
         }
     }
 

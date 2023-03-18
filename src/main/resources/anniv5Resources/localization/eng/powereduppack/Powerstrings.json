@@ -6,12 +6,12 @@
       " #yStrength."
     ]
   },
-  "${ModID}:UnlimitedPowerPower": {
-    "NAME": "Unlimited Power",
+  "${ModID}:DoubleUpPower": {
+    "NAME": "Double Up",
     "DESCRIPTIONS": [
-      "Whenever you play a power card, create an ethereal copy of it in you discard pile.",
-      "Whenever you play a power card, create #b",
-      " ethereal copies of it in you discard pile."
+      "Whenever you play a power card without exhaust, create a copy of it with exhaust in your discard pile.",
+      "Whenever you play a power card without exhaust, create #b",
+      " ethereal copies of it with exhaust in your discard pile."
     ]
   },
   "${ModID}:StrikeFormPower": {
