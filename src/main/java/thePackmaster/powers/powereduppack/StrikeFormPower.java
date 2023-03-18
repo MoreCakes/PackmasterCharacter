@@ -3,7 +3,6 @@ package thePackmaster.powers.powereduppack;
 
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -11,7 +10,7 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.watcher.VigorPower;
-import thePackmaster.actions.powereduppack.UpdateStrikeFormDescriptionAction;
+import thePackmaster.actions.powereduppack.UpdatePowerDescriptionAction;
 import thePackmaster.powers.AbstractPackmasterPower;
 import thePackmaster.powers.boardgamepack.DicePower;
 
@@ -35,7 +34,7 @@ public class StrikeFormPower extends AbstractPackmasterPower implements NonStack
 
     @Override
     public void atEndOfTurn (boolean isPlayer) {
-        addToTop(new UpdateStrikeFormDescriptionAction(this.owner, this.ID));
+        addToTop(new UpdatePowerDescriptionAction(this));
         for (int i = 0; i < amount ; i++) {
             for (AbstractPower p : this.owner.powers) {
                 if (p.ID == VigorPower.POWER_ID || p.ID == DicePower.POWER_ID) {

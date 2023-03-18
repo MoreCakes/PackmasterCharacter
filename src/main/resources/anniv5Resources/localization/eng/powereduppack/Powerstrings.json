@@ -22,5 +22,14 @@
       " damage ",
       " times."
     ]
+  },
+  "${ModID}:SustainedDefencePower": {
+    "NAME": "Sustained Defence",
+    "DESCRIPTIONS": [
+      "At the end of each turn, gain #b",
+      " Block, increased by #yDexterity.",
+      " Block #b",
+      " times, increased by #yDexterity."
+    ]
   }
 }

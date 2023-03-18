@@ -19,6 +19,7 @@ public class StrikeForm extends AbstractPoweredUpCard {
         tags.add(CardTags.STRIKE);
     }
 
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         atb(new ApplyPowerAction(p, p, new StrikeFormPower(p, this), 1));
 

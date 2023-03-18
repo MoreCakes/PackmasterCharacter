@@ -12,5 +12,10 @@
   "${ModID}:StrikeForm": {
     "NAME": "Strike Form",
     "DESCRIPTION": "At the end of each turn, attack a random enemy for !D! damage."
+  },
+  "${ModID}:SustainedDefence": {
+    "NAME": "Sustained Defence",
+    "DESCRIPTION": "At the end of each turn, gain ",
+    "EXTENDED_DESCRIPTION": [" Block, increased by Dexterity."]
   }
 }

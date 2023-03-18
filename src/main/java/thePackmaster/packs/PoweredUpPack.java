@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.cards.blue.ForceField;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import thePackmaster.SpireAnniversary5Mod;
+import thePackmaster.cards.powereduppack.SustainedDefence;
 import thePackmaster.cards.powereduppack.StrengthStorm;
 import thePackmaster.cards.powereduppack.StrikeForm;
 import thePackmaster.cards.powereduppack.DoubleUp;
@@ -27,6 +28,8 @@ public class PoweredUpPack extends AbstractCardPack {
         cards.add(StrengthStorm.ID);
 
         cards.add(StrikeForm.ID);
+        cards.add(SustainedDefence.ID);
+
         cards.add(DoubleUp.ID);
         cards.add(ForceField.ID);
         return cards;
