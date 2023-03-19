@@ -41,8 +41,7 @@ public class BranchOut extends AbstractPoweredUpCard {
         ArrayList<AbstractCard> potentialCards = new ArrayList<>();
         for (AbstractCardPack pack : potentialPacks) {
             for (AbstractCard card : pack.cards) {
-                if (card.type == CardType.POWER && card.rarity != CardRarity.SPECIAL &&
-                        card.rarity != CardRarity.CURSE && !card.hasTag(CardTags.HEALING)) {
+                if (card.type == CardType.POWER && card.rarity != CardRarity.SPECIAL && card.rarity != CardRarity.CURSE) {
                     potentialCards.add(card.makeCopy());
                 }
             }
