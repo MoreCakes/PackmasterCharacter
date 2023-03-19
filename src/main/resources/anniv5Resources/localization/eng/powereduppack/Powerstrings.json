@@ -14,13 +14,13 @@
       " ethereal copies of it with exhaust in your discard pile."
     ]
   },
-  "${ModID}:StrikeFormPower": {
-    "NAME": "Strike Form",
+  "${ModID}:SustainedOffencePower": {
+    "NAME": "Sustained Offence",
     "DESCRIPTIONS": [
-      "At the end of each turn, attack a random enemy for ",
-      " damage.",
-      " damage ",
-      " times."
+      "At the end of each turn, deal #b",
+      " Damage to a random enemy, increased by #yStrength.",
+      " Damage to a random enemy #b",
+      " times, increased by #yStrength."
     ]
   },
   "${ModID}:SustainedDefencePower": {

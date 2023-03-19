@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.localization.UIStrings;
 import thePackmaster.SpireAnniversary5Mod;
 import thePackmaster.cards.powereduppack.SustainedDefence;
 import thePackmaster.cards.powereduppack.StrengthStorm;
-import thePackmaster.cards.powereduppack.StrikeForm;
+import thePackmaster.cards.powereduppack.SustainedOffence;
 import thePackmaster.cards.powereduppack.DoubleUp;
 
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public class PoweredUpPack extends AbstractCardPack {
         ArrayList<String> cards = new ArrayList<>();
         cards.add(StrengthStorm.ID);
 
-        cards.add(StrikeForm.ID);
+        cards.add(SustainedOffence.ID);
         cards.add(SustainedDefence.ID);
 
         cards.add(DoubleUp.ID);

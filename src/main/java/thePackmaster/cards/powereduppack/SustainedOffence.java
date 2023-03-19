@@ -6,46 +6,45 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
-import thePackmaster.powers.powereduppack.SustainedDefencePower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
+import thePackmaster.powers.powereduppack.SustainedOffencePower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.atb;
 
 
-public class SustainedDefence extends AbstractPoweredUpCard {
-    public final static String ID = makeID("SustainedDefence");
+public class SustainedOffence extends AbstractPoweredUpCard {
+    public final static String ID = makeID("SustainedOffence");
 
-    public SustainedDefence() {
+    public SustainedOffence() {
         super(ID, 2, CardType.POWER, CardRarity.COMMON, CardTarget.SELF);
-        magicNumber = baseMagicNumber = 5;
+        magicNumber = baseMagicNumber = 6;
     }
-
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        atb(new ApplyPowerAction(p, p, new SustainedDefencePower(p, magicNumber), 1));
+        atb(new ApplyPowerAction(p, p, new SustainedOffencePower(p, magicNumber), 1));
     }
 
     @Override
     public void applyPowers () {
         super.applyPowers();
 
-        updateDescription(magicNumber + countDexterity());
+        updateDescription(magicNumber + countStrength());
     }
 
-    private int countDexterity() {
-        int dexterity = 0;
+    private int countStrength() {
+        int strength = 0;
         for (AbstractPower p : AbstractDungeon.player.powers) {
-            if (p.ID == DexterityPower.POWER_ID) {
-                dexterity += p.amount;
+            if (p.ID == StrengthPower.POWER_ID) {
+                strength += p.amount;
             }
         }
-        return dexterity;
+        return strength;
     }
 
-    private void updateDescription(int block) {
-        this.rawDescription = cardStrings.DESCRIPTION + block + cardStrings.EXTENDED_DESCRIPTION[0];
+    private void updateDescription(int damage) {
+        this.rawDescription = cardStrings.DESCRIPTION + damage + cardStrings.EXTENDED_DESCRIPTION[0];
 
         initializeDescription();
     }

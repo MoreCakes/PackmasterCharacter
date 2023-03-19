@@ -9,9 +9,10 @@
     "DESCRIPTION": "Whenever you play a power card without exhaust, create a copy of it with exhaust in your discard pile.",
     "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a power card without exhaust, create a copy of it with exhaust in your discard pile."
   },
-  "${ModID}:StrikeForm": {
-    "NAME": "Strike Form",
-    "DESCRIPTION": "At the end of each turn, attack a random enemy for !D! damage."
+  "${ModID}:SustainedOffence": {
+    "NAME": "Sustained Offence",
+    "DESCRIPTION": "At the end of each turn, deal ",
+    "EXTENDED_DESCRIPTION": [" Damage to a random enemy, increased by Strength."]
   },
   "${ModID}:SustainedDefence": {
     "NAME": "Sustained Defence",
