@@ -18,5 +18,9 @@
     "NAME": "Sustained Defence",
     "DESCRIPTION": "At the end of each turn, gain ",
     "EXTENDED_DESCRIPTION": [" Block, increased by Dexterity."]
+  },
+  "${ModID}:BranchOut": {
+    "NAME": "Branch Out",
+    "DESCRIPTION": "Fleeting. NL Choose 1 of !M! powers from packs not available in your draft to add to your hand and deck."
   }
 }
