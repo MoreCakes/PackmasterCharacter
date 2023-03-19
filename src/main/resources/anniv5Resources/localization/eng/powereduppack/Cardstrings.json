@@ -28,5 +28,10 @@
   "${ModID}:PowerfulCharge": {
     "NAME": "Powerful Charge",
     "DESCRIPTION": "Deal !D! damage. NL Reduce the cost of a random power in hand by 1 this combat."
+  },
+  "${ModID}:Fractal": {
+    "NAME": "Fractal",
+    "DESCRIPTION": "Gain !M! Strength, Dexterity and Focus. NL Can be upgraded any number of times.",
+    "EXTENDED_DESCRIPTION": [" NL Add ", " Fractal", "+", " to your discard pile."]
   }
 }

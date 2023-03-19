@@ -25,12 +25,12 @@ public class PoweredUpPack extends AbstractCardPack {
         cards.add(StrengthStorm.ID);
 
 
-
         cards.add(SustainedOffence.ID);
         cards.add(SustainedDefence.ID);
         cards.add(PowerfulCharge.ID);
 
         cards.add(ForceField.ID);
+        cards.add(Fractal.ID);
 
         cards.add(DoubleUp.ID);
         cards.add(BranchOut.ID);
