@@ -11,6 +11,7 @@ import thePackmaster.powers.powereduppack.SustainedOffencePower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.atb;
+import static thePackmaster.util.Wiz.p;
 
 
 public class SustainedOffence extends AbstractPoweredUpCard {
@@ -35,7 +36,7 @@ public class SustainedOffence extends AbstractPoweredUpCard {
 
     private int countStrength() {
         int strength = 0;
-        for (AbstractPower p : AbstractDungeon.player.powers) {
+        for (AbstractPower p : p().powers) {
             if (p.ID == StrengthPower.POWER_ID) {
                 strength += p.amount;
             }

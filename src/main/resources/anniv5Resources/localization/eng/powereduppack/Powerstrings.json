@@ -9,9 +9,9 @@
   "${ModID}:DoubleUpPower": {
     "NAME": "Double Up",
     "DESCRIPTIONS": [
-      "Whenever you play a power card without exhaust, create a copy of it with exhaust in your discard pile.",
-      "Whenever you play a power card without exhaust, create #b",
-      " ethereal copies of it with exhaust in your discard pile."
+      "Whenever you play a power card without #yexhaust, create a copy of it with #yexhaust in your discard pile.",
+      "Whenever you play a power card without #yexhaust, create #b",
+      " copies of it with #yexhaust in your discard pile."
     ]
   },
   "${ModID}:SustainedOffencePower": {

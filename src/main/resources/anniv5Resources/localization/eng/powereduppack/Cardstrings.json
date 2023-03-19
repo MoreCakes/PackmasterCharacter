@@ -24,5 +24,9 @@
   "${ModID}:BranchOut": {
     "NAME": "Branch Out",
     "DESCRIPTION": "Fleeting. NL Choose 1 of !M! powers from packs not available in your draft to add to your hand and deck."
+  },
+  "${ModID}:PowerfulCharge": {
+    "NAME": "Powerful Charge",
+    "DESCRIPTION": "Deal !D! damage. NL Reduce the cost of a random power in hand by 1 this combat."
   }
 }

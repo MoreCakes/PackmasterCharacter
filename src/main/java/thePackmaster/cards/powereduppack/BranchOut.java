@@ -12,6 +12,7 @@ import thePackmaster.packs.AbstractCardPack;
 import java.util.ArrayList;
 
 import static thePackmaster.SpireAnniversary5Mod.*;
+import static thePackmaster.util.Wiz.deck;
 import static thePackmaster.util.Wiz.getRandomItem;
 
 
@@ -56,7 +57,7 @@ public class BranchOut extends AbstractPoweredUpCard {
         }
 
         addToTop(new FlexibleDiscoveryAction(cards, selectedCard -> {
-            AbstractDungeon.player.masterDeck.addToTop(selectedCard);
+            deck().addToTop(selectedCard);
             selectedCard.update();
         }, false));
     }

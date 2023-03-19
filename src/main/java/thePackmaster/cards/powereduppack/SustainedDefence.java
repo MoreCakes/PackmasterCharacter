@@ -11,6 +11,7 @@ import thePackmaster.powers.powereduppack.SustainedDefencePower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.atb;
+import static thePackmaster.util.Wiz.p;
 
 
 public class SustainedDefence extends AbstractPoweredUpCard {
@@ -36,7 +37,7 @@ public class SustainedDefence extends AbstractPoweredUpCard {
 
     private int countDexterity() {
         int dexterity = 0;
-        for (AbstractPower p : AbstractDungeon.player.powers) {
+        for (AbstractPower p : p().powers) {
             if (p.ID == DexterityPower.POWER_ID) {
                 dexterity += p.amount;
             }
