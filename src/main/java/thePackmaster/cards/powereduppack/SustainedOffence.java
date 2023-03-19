@@ -44,7 +44,7 @@ public class SustainedOffence extends AbstractPoweredUpCard {
     }
 
     private void updateDescription(int damage) {
-        this.rawDescription = cardStrings.DESCRIPTION + damage + cardStrings.EXTENDED_DESCRIPTION[0];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + damage + cardStrings.EXTENDED_DESCRIPTION[1];
 
         initializeDescription();
     }

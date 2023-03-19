@@ -11,13 +11,15 @@
   },
   "${ModID}:SustainedOffence": {
     "NAME": "Sustained Offence",
-    "DESCRIPTION": "At the end of each turn, deal ",
-    "EXTENDED_DESCRIPTION": [" Damage to a random enemy, increased by Strength."]
+    "DESCRIPTION": "At the end of each turn, deal !M! Damage to a random enemy, increased by Strength.",
+    "EXTENDED_DESCRIPTION": ["At the end of each turn, deal ",
+      " Damage to a random enemy, increased by Strength."]
   },
   "${ModID}:SustainedDefence": {
     "NAME": "Sustained Defence",
-    "DESCRIPTION": "At the end of each turn, gain ",
-    "EXTENDED_DESCRIPTION": [" Block, increased by Dexterity."]
+    "DESCRIPTION": "At the end of each turn, gain !M! Block, increased by Dexterity.",
+    "EXTENDED_DESCRIPTION": ["At the end of each turn, gain ",
+      " Block, increased by Dexterity."]
   },
   "${ModID}:BranchOut": {
     "NAME": "Branch Out",

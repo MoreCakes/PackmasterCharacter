@@ -14,7 +14,7 @@ public class DoubleUp extends AbstractPoweredUpCard {
     public final static String ID = makeID("DoubleUp");
 
     public DoubleUp() {
-        super(ID, 3, CardType.POWER, CardRarity.UNCOMMON, CardTarget.SELF);
+        super(ID, 3, CardType.POWER, CardRarity.RARE, CardTarget.SELF);
         magicNumber = baseMagicNumber = 1;
     }
 

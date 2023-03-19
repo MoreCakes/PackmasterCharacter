@@ -45,7 +45,7 @@ public class SustainedDefence extends AbstractPoweredUpCard {
     }
 
     private void updateDescription(int block) {
-        this.rawDescription = cardStrings.DESCRIPTION + block + cardStrings.EXTENDED_DESCRIPTION[0];
+        this.rawDescription = cardStrings.EXTENDED_DESCRIPTION[0] + block + cardStrings.EXTENDED_DESCRIPTION[1];
 
         initializeDescription();
     }
