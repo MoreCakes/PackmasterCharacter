@@ -18,7 +18,7 @@ public class PowerfulCharge extends AbstractPoweredUpCard {
 
     public PowerfulCharge() {
         super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        damage = baseDamage = 12;
+        damage = baseDamage = 14;
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
@@ -28,7 +28,7 @@ public class PowerfulCharge extends AbstractPoweredUpCard {
 
     @Override
     public void upp() {
-        upgradeDamage(4);
+        upgradeDamage(6);
     }
 }
 

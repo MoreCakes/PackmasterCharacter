@@ -22,11 +22,13 @@ public class PoweredUpPack extends AbstractCardPack {
     @Override
     public ArrayList<String> getCards() {
         ArrayList<String> cards = new ArrayList<>();
-        cards.add(StrengthStorm.ID);
+        //cards.add(StrengthStorm.ID);
+
+        //cards.add(SustainedOffence.ID);
+        //cards.add(SustainedDefence.ID);
 
 
-        cards.add(SustainedOffence.ID);
-        cards.add(SustainedDefence.ID);
+
         cards.add(PowerfulCharge.ID);
 
         cards.add(ForceField.ID);
