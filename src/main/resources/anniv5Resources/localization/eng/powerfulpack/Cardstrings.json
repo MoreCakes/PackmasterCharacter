@@ -47,5 +47,10 @@
     "NAME": "Exploit Weakness",
     "DESCRIPTION": "Whenever you apply a debuff, gain !M! Vigor. Add 1 *Debilitating *Strike to your hand.",
     "UPGRADE_DESCRIPTION": "Whenever you apply a debuff, gain !M! Vigor. Add !${ModID}:m2! *Debilitating *Strikes to your hand."
-}
+  },
+  "${ModID}:GrowingMomentum": {
+    "NAME": "Growing Momentum",
+    "DESCRIPTION": "Gain [E] next turn. NL Whenever you play a Power card, gain [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Gain [E] and draw 1 card next turn. NL Whenever you play a Power card, gain [E] and draw 1 card next turn."
+  }
 }

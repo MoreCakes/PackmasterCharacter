@@ -6,6 +6,20 @@
       " #yStrength."
     ]
   },
+  "${ModID}:GrowingMomentumEnergyPower": {
+    "NAME": "Growing Momentum - Energy",
+    "DESCRIPTIONS": [
+      "Whenever you play a power, gain #b",
+      " [E] next turn."
+    ]
+  },
+  "${ModID}:GrowingMomentumCardsPower": {
+    "NAME": "Growing Momentum - Cards",
+    "DESCRIPTIONS": [
+      "Whenever you play a power, draw #b",
+      " cards next turn."
+    ]
+  },
   "${ModID}:ExploitWeaknessPower": {
   "NAME": "Exploit Weakness",
   "DESCRIPTIONS": [
