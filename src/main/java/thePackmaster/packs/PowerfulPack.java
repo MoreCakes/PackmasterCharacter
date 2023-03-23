@@ -27,7 +27,8 @@ public class PowerfulPack extends AbstractCardPack {
         //cards.add(SustainedOffence.ID);
         //cards.add(SustainedDefence.ID);
 
-        
+        cards.add(DebilitatingStrike.ID);
+
         cards.add(Jettison.ID);
         cards.add(PowerfulCharge.ID);
 

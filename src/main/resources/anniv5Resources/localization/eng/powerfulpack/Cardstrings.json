@@ -38,5 +38,9 @@
     "NAME": "Jettison",
     "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If you discarded a power, draw !M! cards.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL You may discard 1 card. NL If you discarded a power, draw !M! cards."
+  },
+  "${ModID}:DebilitatingStrike": {
+    "NAME": "DebilitatingStrike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Apply !M! Weak."
   }
 }
