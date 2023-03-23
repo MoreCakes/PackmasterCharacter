@@ -1,17 +1,16 @@
-package thePackmaster.cards.powereduppack;
+package thePackmaster.cards.powerfulpack;
 
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import thePackmaster.powers.downfallpack.AwakenDeathPower;
-import thePackmaster.powers.powereduppack.StrengthStormPower;
+import thePackmaster.powers.powerfulpack.StrengthStormPower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.atb;
 
 
-public class StrengthStorm extends AbstractPoweredUpCard {
+public class StrengthStorm extends AbstractPowerfulCard {
     public final static String ID = makeID("StrengthStorm");
 
     public StrengthStorm() {

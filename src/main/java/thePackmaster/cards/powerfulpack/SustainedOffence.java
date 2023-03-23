@@ -1,20 +1,19 @@
-package thePackmaster.cards.powereduppack;
+package thePackmaster.cards.powerfulpack;
 
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import thePackmaster.powers.powereduppack.SustainedOffencePower;
+import thePackmaster.powers.powerfulpack.SustainedOffencePower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.atb;
 import static thePackmaster.util.Wiz.p;
 
 
-public class SustainedOffence extends AbstractPoweredUpCard {
+public class SustainedOffence extends AbstractPowerfulCard {
     public final static String ID = makeID("SustainedOffence");
 
     public SustainedOffence() {

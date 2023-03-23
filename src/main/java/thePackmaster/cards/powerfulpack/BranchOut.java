@@ -1,10 +1,9 @@
-package thePackmaster.cards.powereduppack;
+package thePackmaster.cards.powerfulpack;
 
 
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.FleetingField;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thePackmaster.actions.FlexibleDiscoveryAction;
 import thePackmaster.packs.AbstractCardPack;
@@ -16,7 +15,7 @@ import static thePackmaster.util.Wiz.deck;
 import static thePackmaster.util.Wiz.getRandomItem;
 
 
-public class BranchOut extends AbstractPoweredUpCard {
+public class BranchOut extends AbstractPowerfulCard {
     public final static String ID = makeID("BranchOut");
 
     public BranchOut() {

@@ -1,7 +1,6 @@
-package thePackmaster.actions.powereduppack;
+package thePackmaster.actions.powerfulpack;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class UpdatePowerDescriptionAction extends AbstractGameAction {

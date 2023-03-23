@@ -1,45 +1,55 @@
-package thePackmaster.powers.powereduppack;
+package thePackmaster.powers.powerfulpack;
 
 
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.OnReceivePowerPower;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.DexterityPower;
-import thePackmaster.actions.powereduppack.UpdatePowerDescriptionAction;
+import com.megacrit.cardcrawl.powers.StrengthPower;
+import thePackmaster.actions.powerfulpack.UpdatePowerDescriptionAction;
 import thePackmaster.powers.AbstractPackmasterPower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 
 
-public class SustainedDefencePower extends AbstractPackmasterPower implements NonStackablePower, OnReceivePowerPower {
-    public static final String POWER_ID = makeID("SustainedDefencePower");
+public class SustainedOffencePower extends AbstractPackmasterPower implements NonStackablePower, OnReceivePowerPower {
+    public static final String POWER_ID = makeID("SustainedOffencePower");
     public static final String NAME = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).NAME;
     public static final String DESCRIPTIONS[] = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).DESCRIPTIONS;
 
-    public int block;
+    private  int damage;
 
-    public SustainedDefencePower(AbstractCreature owner, int block) {
+
+    public SustainedOffencePower(AbstractCreature owner, int damage) {
         super(POWER_ID,NAME,PowerType.BUFF,false,owner,1);
         isTwoAmount = true;
-        this.block = block;
+        this.damage = damage;
         updateDescription();
     }
 
     @Override
     public void atEndOfTurn (boolean isPlayer) {
         updateDescription();
-        for (int i = 0; i < amount ; i++) {
-            owner.addBlock(amount2);
-            this.flash();
+        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            for (int i = 0; i < amount; i++) {
+                addToTop(new DamageRandomEnemyAction(
+                        new DamageInfo(this.owner, amount2, DamageInfo.DamageType.THORNS),
+                        AbstractGameAction.AttackEffect.SLASH_VERTICAL
+                ));
+                this.flash();
+            }
         }
     }
 
     @Override
     public boolean isStackable(AbstractPower power) {
-        if (power instanceof SustainedDefencePower) {
-            return ((SustainedDefencePower) power).block == this.block;
+        if (power instanceof SustainedOffencePower) {
+            return ((SustainedOffencePower) power).damage == this.damage;
         } else {
             return false;
         }
@@ -47,7 +57,7 @@ public class SustainedDefencePower extends AbstractPackmasterPower implements No
 
     @Override
     public void updateDescription() {
-        amount2 = block + countDexterity();
+        amount2 = damage + countStrength();
         if (amount == 1) {
             description = DESCRIPTIONS[0] + amount2 + DESCRIPTIONS[1];
         } else {
@@ -55,24 +65,25 @@ public class SustainedDefencePower extends AbstractPackmasterPower implements No
         }
     }
 
-    private int countDexterity() {
-        int dexterity = 0;
+    private int countStrength() {
+        int strength = 0;
         for (AbstractPower p : this.owner.powers) {
-            if (p.ID == DexterityPower.POWER_ID) {
-                dexterity += p.amount;
+            if (p.ID == StrengthPower.POWER_ID) {
+                strength += p.amount;
             }
         }
-        return dexterity;
+        return strength;
     }
 
 
     @Override
     public boolean onReceivePower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
-        if (power.ID == DexterityPower.POWER_ID) {
+        if (power.ID == StrengthPower.POWER_ID) {
             addToTop(new UpdatePowerDescriptionAction(this));
         }
         return true;
     }
+
 }
 
 

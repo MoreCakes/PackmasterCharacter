@@ -1,14 +1,14 @@
-package thePackmaster.cards.powereduppack;
+package thePackmaster.cards.powerfulpack;
 
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import thePackmaster.powers.powereduppack.DoubleUpPower;
+import thePackmaster.powers.powerfulpack.DoubleUpPower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.applyToSelf;
 
 
-public class DoubleUp extends AbstractPoweredUpCard {
+public class DoubleUp extends AbstractPowerfulCard {
     public final static String ID = makeID("DoubleUp");
 
     public DoubleUp() {

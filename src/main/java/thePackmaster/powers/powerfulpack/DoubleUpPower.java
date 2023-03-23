@@ -1,4 +1,4 @@
-package thePackmaster.powers.powereduppack;
+package thePackmaster.powers.powerfulpack;
 
 
 import basemod.cardmods.ExhaustMod;

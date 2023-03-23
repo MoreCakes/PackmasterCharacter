@@ -1,19 +1,16 @@
-package thePackmaster.cards.powereduppack;
+package thePackmaster.cards.powerfulpack;
 
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import thePackmaster.actions.powereduppack.PowerfulChargeAction;
-import thePackmaster.powers.powereduppack.DoubleUpPower;
+import thePackmaster.actions.powerfulpack.PowerfulChargeAction;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 import static thePackmaster.util.Wiz.atb;
 
 
-public class PowerfulCharge extends AbstractPoweredUpCard {
+public class PowerfulCharge extends AbstractPowerfulCard {
     public final static String ID = makeID("PowerfulCharge");
 
     public PowerfulCharge() {

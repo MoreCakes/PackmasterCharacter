@@ -1,29 +1,19 @@
-package thePackmaster.cards.powereduppack;
+package thePackmaster.cards.powerfulpack;
 
 
-import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier;
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.FleetingField;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
-import com.megacrit.cardcrawl.actions.unique.AddCardToDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.FocusPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
-import thePackmaster.actions.FlexibleDiscoveryAction;
-import thePackmaster.packs.AbstractCardPack;
-import thePackmaster.powers.powereduppack.DoubleUpPower;
-import thePackmaster.powers.powereduppack.StrengthStormPower;
-
-import java.util.ArrayList;
 
 import static thePackmaster.SpireAnniversary5Mod.*;
 import static thePackmaster.util.Wiz.*;
 
 
-public class Fractal extends AbstractPoweredUpCard {
+public class Fractal extends AbstractPowerfulCard {
     public final static String ID = makeID("Fractal");
 
     public Fractal() {

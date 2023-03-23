@@ -1,12 +1,8 @@
-package thePackmaster.actions.powereduppack;
+package thePackmaster.actions.powerfulpack;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import thePackmaster.util.Wiz;
 
 import java.util.ArrayList;
 
