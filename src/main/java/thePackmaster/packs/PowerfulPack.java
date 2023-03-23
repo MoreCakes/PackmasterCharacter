@@ -32,6 +32,7 @@ public class PowerfulPack extends AbstractCardPack {
         cards.add(Jettison.ID);
         cards.add(PowerfulCharge.ID);
 
+        cards.add(ExploitWeakness.ID);
         cards.add(ForceField.ID);
         cards.add(Fractal.ID);
 

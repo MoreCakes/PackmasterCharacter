@@ -6,6 +6,13 @@
       " #yStrength."
     ]
   },
+  "${ModID}:ExploitWeaknessPower": {
+  "NAME": "Exploit Weakness",
+  "DESCRIPTIONS": [
+    "Whenever you apply a debuff, gain ",
+    " #yVigor."
+  ]
+},
   "${ModID}:DoubleUpPower": {
     "NAME": "Double Up",
     "DESCRIPTIONS": [
