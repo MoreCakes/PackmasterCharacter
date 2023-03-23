@@ -1,13 +1,11 @@
 package thePackmaster.cards.powereduppack;
 
-
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thePackmaster.powers.powereduppack.DoubleUpPower;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
-import static thePackmaster.util.Wiz.atb;
+import static thePackmaster.util.Wiz.applyToSelf;
 
 
 public class DoubleUp extends AbstractPoweredUpCard {
@@ -19,7 +17,7 @@ public class DoubleUp extends AbstractPoweredUpCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        atb(new ApplyPowerAction(p, p, new DoubleUpPower(p, magicNumber), magicNumber));
+        applyToSelf(new DoubleUpPower(p, magicNumber));
 
     }
 
