@@ -25,13 +25,18 @@
     "NAME": "Branch Out",
     "DESCRIPTION": "Fleeting. NL Choose 1 of !M! Powers from packs not available in your draft to add to your hand and deck."
   },
+  "${ModID}:Envision": {
+    "NAME": "Envision",
+    "DESCRIPTION": "Add a random Power to your hand. NL It gains Ethereal.",
+    "UPGRADE_DESCRIPTION": "Add a random Upgraded Power to your hand. NL It gains Ethereal."
+  },
   "${ModID}:PowerfulCharge": {
     "NAME": "Powerful Charge",
     "DESCRIPTION": "Deal !D! damage. NL Reduce the cost of a random Power in hand by 1 this combat."
   },
   "${ModID}:Fractal": {
     "NAME": "Fractal",
-    "DESCRIPTION": "Gain !M! Strength, Dexterity and Focus. NL Can be upgraded any number of times.",
+    "DESCRIPTION": "Gain !M! Strength, Dexterity and Focus. NL Can be Upgraded any number of times.",
     "EXTENDED_DESCRIPTION": [" NL Add ", " Fractal", "+", " to your discard pile."]
   },
   "${ModID}:Jettison": {
