@@ -1,13 +1,13 @@
 {
   "${ModID}:StrengthStorm": {
     "NAME": "Strength Storm",
-    "DESCRIPTION": "Whenever you play a Power card, gain 1 Strength.",
+    "DESCRIPTION": "Whenever you play a Power, gain 1 Strength.",
     "UPGRADE_DESCRIPTION": "Test."
   },
   "${ModID}:DoubleUp": {
     "NAME": "Double Up",
-    "DESCRIPTION": "Whenever you play a power card without exhaust, create a copy of it with exhaust in your discard pile.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a power card without exhaust, create a copy of it with exhaust in your discard pile."
+    "DESCRIPTION": "Whenever you play a Power without exhaust, create a copy of it with exhaust in your discard pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a Power without exhaust, create a copy of it with exhaust in your discard pile."
   },
   "${ModID}:SustainedOffence": {
     "NAME": "Sustained Offence",
@@ -23,11 +23,11 @@
   },
   "${ModID}:BranchOut": {
     "NAME": "Branch Out",
-    "DESCRIPTION": "Fleeting. NL Choose 1 of !M! powers from packs not available in your draft to add to your hand and deck."
+    "DESCRIPTION": "Fleeting. NL Choose 1 of !M! Powers from packs not available in your draft to add to your hand and deck."
   },
   "${ModID}:PowerfulCharge": {
     "NAME": "Powerful Charge",
-    "DESCRIPTION": "Deal !D! damage. NL Reduce the cost of a random power in hand by 1 this combat."
+    "DESCRIPTION": "Deal !D! damage. NL Reduce the cost of a random Power in hand by 1 this combat."
   },
   "${ModID}:Fractal": {
     "NAME": "Fractal",
@@ -36,8 +36,8 @@
   },
   "${ModID}:Jettison": {
     "NAME": "Jettison",
-    "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If you discarded a power, draw !M! cards.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL You may discard 1 card. NL If you discarded a power, draw !M! cards."
+    "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If you discarded a Power, draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL You may discard 1 card. NL If you discarded a Power, draw !M! cards."
   },
   "${ModID}:DebilitatingStrike": {
     "NAME": "Debilitating Strike",
@@ -50,7 +50,7 @@
   },
   "${ModID}:GrowingMomentum": {
     "NAME": "Growing Momentum",
-    "DESCRIPTION": "Gain [E] next turn. NL Whenever you play a Power card, gain [E] next turn.",
-    "UPGRADE_DESCRIPTION": "Gain [E] and draw 1 card next turn. NL Whenever you play a Power card, gain [E] and draw 1 card next turn."
+    "DESCRIPTION": "Gain [E] next turn. NL Whenever you play a Power, gain [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Gain [E] and draw 1 card next turn. NL Whenever you play a Power, gain [E] and draw 1 card next turn."
   }
 }

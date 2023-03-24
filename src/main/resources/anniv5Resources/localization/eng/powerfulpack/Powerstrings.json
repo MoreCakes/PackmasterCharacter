@@ -2,21 +2,21 @@
   "${ModID}:StrengthStormPower": {
     "NAME": "Strength Storm",
     "DESCRIPTIONS": [
-      "Whenever you play a power, gain #b",
+      "Whenever you play a Power, gain #b",
       " #yStrength."
     ]
   },
   "${ModID}:GrowingMomentumEnergyPower": {
     "NAME": "Growing Momentum - Energy",
     "DESCRIPTIONS": [
-      "Whenever you play a power, gain #b",
+      "Whenever you play a Power, gain #b",
       " [E] next turn."
     ]
   },
   "${ModID}:GrowingMomentumCardsPower": {
     "NAME": "Growing Momentum - Cards",
     "DESCRIPTIONS": [
-      "Whenever you play a power, draw #b",
+      "Whenever you play a Power, draw #b",
       " cards next turn."
     ]
   },
@@ -30,8 +30,8 @@
   "${ModID}:DoubleUpPower": {
     "NAME": "Double Up",
     "DESCRIPTIONS": [
-      "Whenever you play a power card without #yexhaust, create a copy of it with #yexhaust in your discard pile.",
-      "Whenever you play a power card without #yexhaust, create #b",
+      "Whenever you play a Power without #yexhaust, create a copy of it with #yexhaust in your discard pile.",
+      "Whenever you play a Power without #yexhaust, create #b",
       " copies of it with #yexhaust in your discard pile."
     ]
   },
