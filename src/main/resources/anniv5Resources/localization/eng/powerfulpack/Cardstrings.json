@@ -44,6 +44,10 @@
     "DESCRIPTION": "Gain !B! Block. NL Discard 1 card. NL If you discarded a Power, draw !M! cards.",
     "UPGRADE_DESCRIPTION": "Gain !B! Block. NL You may discard 1 card. NL If you discarded a Power, draw !M! cards."
   },
+  "${ModID}:PreplannedBarrier": {
+    "NAME": "Preplanned Barrier",
+    "DESCRIPTION": "Gain !B! Block. NL When you play a Power, draw all Preplanned Barriers in your draw pile."
+  },
   "${ModID}:DebilitatingStrike": {
     "NAME": "Debilitating Strike",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Apply !M! Weak."
