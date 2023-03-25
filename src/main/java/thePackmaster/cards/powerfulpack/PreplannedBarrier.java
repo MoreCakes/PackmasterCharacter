@@ -4,7 +4,6 @@ package thePackmaster.cards.powerfulpack;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import thePackmaster.actions.pixiepack.DrawSpecificCardAction;
 import thePackmaster.actions.powerfulpack.PreplannedBarrierAction;
 
 import static thePackmaster.SpireAnniversary5Mod.makeID;
@@ -16,7 +15,7 @@ public class PreplannedBarrier extends AbstractPowerfulCard {
     public final static String ID = makeID("PreplannedBarrier");
 
     public PreplannedBarrier() {
-        super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
+        super(ID, 1, CardType.SKILL, CardRarity.RARE, CardTarget.SELF);
         block = baseBlock = 10;
     }
 
