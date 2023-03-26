@@ -1,9 +1,11 @@
 package thePackmaster.cards.powerfulpack;
 
 
+import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.FocusPower;
@@ -41,7 +43,16 @@ public class Fractal extends AbstractPowerfulCard {
     }
 
     @Override
+    protected Texture getPortraitImage() {
+        if (upgraded) {
+            return ImageMaster.loadImage("anniv5Resources/images/cards/FractalUpgraded_p.png");
+        }
+        return super.getPortraitImage();
+    }
+
+    @Override
     public void  upgrade() {
+        loadCardImage("anniv5Resources/images/cards/FractalUpgraded.png");
         if (upgraded) {
             cardsToPreview.upgrade();
             rawDescription = cardStrings.DESCRIPTION + cardStrings.EXTENDED_DESCRIPTION[0]
