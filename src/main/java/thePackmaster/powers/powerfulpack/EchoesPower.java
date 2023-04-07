@@ -14,13 +14,13 @@ import thePackmaster.powers.AbstractPackmasterPower;
 import static thePackmaster.SpireAnniversary5Mod.makeID;
 
 
-public class DoubleUpPower extends AbstractPackmasterPower {
-    public static final String POWER_ID = makeID("DoubleUpPower");
+public class EchoesPower extends AbstractPackmasterPower {
+    public static final String POWER_ID = makeID("EchoesPower");
     public static final String NAME = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).NAME;
     public static final String DESCRIPTIONS[] = CardCrawlGame.languagePack.getPowerStrings(POWER_ID).DESCRIPTIONS;
 
 
-    public DoubleUpPower(AbstractCreature owner, int amount) {
+    public EchoesPower(AbstractCreature owner, int amount) {
         super(POWER_ID,NAME,PowerType.BUFF,false,owner,amount);
         updateDescription();
     }

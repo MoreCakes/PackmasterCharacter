@@ -27,8 +27,8 @@
     " #yVigor."
   ]
 },
-  "${ModID}:DoubleUpPower": {
-    "NAME": "Double Up",
+  "${ModID}:EchoesPower": {
+    "NAME": "Echoes",
     "DESCRIPTIONS": [
       "Whenever you play a Power without #yexhaust, create a copy of it with #yexhaust in your discard pile.",
       "Whenever you play a Power without #yexhaust, create #b",

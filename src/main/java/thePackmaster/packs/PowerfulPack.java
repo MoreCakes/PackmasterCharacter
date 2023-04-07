@@ -38,7 +38,7 @@ public class PowerfulPack extends AbstractCardPack {
         cards.add(Fractal.ID);
         cards.add(GrowingMomentum.ID);
 
-        cards.add(DoubleUp.ID);
+        cards.add(Echoes.ID);
         cards.add(BranchOut.ID);
         cards.add(PreplannedBarrier.ID);
         return cards;
