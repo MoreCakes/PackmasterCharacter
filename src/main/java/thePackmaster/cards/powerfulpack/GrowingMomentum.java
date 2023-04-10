@@ -24,10 +24,6 @@ public class GrowingMomentum extends AbstractPowerfulCard {
     }
 
     public void use(AbstractPlayer p, AbstractMonster m) {
-        applyToSelf(new EnergizedPower(p,1));
-        if (upgraded) {
-            applyToSelf(new DrawCardNextTurnPower(p,1));
-        }
         applyToSelf(new GrowingMomentumEnergyPower(p, 1));
         if (upgraded) {
             applyToSelf(new GrowingMomentumCardsPower(p, 1));
